@@ -1,0 +1,6 @@
+select salt_comment.created_at, salt_comment.user_id, username 
+from 
+salt_user
+join salt_comment
+on user_id = salt_user.id
+order by created_at desc limit 1
